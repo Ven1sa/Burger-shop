@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+       color:sienna;
+       font-family:serif;
+}
+h2{
+       color:sienna;
+       font-family:Brush Script MT;
+       font-size:50px;
+}
+body{
+       font-size:20px;
+       font-family:Baskerville;
+       background-image: url('burger7.png');
+}
+.logo {
+        display: flex;
+        justify-content:left;
+        align-items: center;
+}
+.name{
+       font-size:70px;
+}
+</style>
+<title>Burger N' Bite</title>
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <img src="ham.png">
+        <h1 class="name">Burger N' Bite</h1>
+    </div>
+</nav>
+<h2>Customize your Burger</h2>
+<form action="burger2.html" method="post">
+<label for="patty">Type of patty you want in your burger:</label>
+<select>
+<option value="Beef">Beef</option>
+<option value="Crispy chicken">Crispy chicken</option>
+<option value="Tandoori chicken">Tandoori chicken</option>
+<option value="Tikka checiken">Tikka chicken</option>
+<option value="Beef steak">Beef steak</option>
+<option value="Turkey burger">Turkey burger</option>
+<option value="Barbequeue chicken">Barbequeue chicken</option>
+</select>
+<br>
+<br>
+<label for="patty">Number of patties you want in the burger:</label>
+<input type="number" id="patty" name="patty" min="1" max="5" required>
+<br>
+<br>
+<label>Do you want extra cheese?</label>
+<br>
+YES:
+<input type="radio" name="poll" value="yes"/>
+NO:
+<input type="radio" name="poll" value="no"/>
+<br>
+<br>
+<label>Select type of sauce you would like</label>
+<select>
+<option value="Mayo">Mayo</option>
+<option value="Ketchup">Ketchup</option>
+<option value="Mustard">Mustard</option>
+<option value="Barbequeue sauce">Barbequeue sauce</option>
+<option value="Cheese sauce">Cheese sauce</option>
+<option value="Hot sauce">Hot sauce</option>
+</select>
+<br>
+<br>
+<label>Select a topping that you would like</label>
+<br>
+<b>Cheese:</b>
+<input type="checkbox" name="topping" value="cheese">
+<br>
+<b>Iceberg lettuce:</b>
+<input type="checkbox" name="topping" value="Iceberg lettuce">
+<br>
+<b>Onion:</b>
+<input type="checkbox" name="topping" value="onion">
+<br>
+<b>Bacon:</b>
+<input type="checkbox" name="topping" value="bacon">
+<br>
+<b>Tomato:</b>
+<input type="checkbox" name="topping" value="tomato">
+<br>
+<b>Jalapeno:</b>
+<input type="checkbox" name="topping" value="jalapeno">
+<br>
+<br>
+<label>If you want any side dishes select:</label>
+<select>
+<option value="Baked potato bar">Baked potato bar</option>
+<option value="Grilled potato salad">Grilled potato salad</option>
+<option value="Mac n cheese">Mac n cheese</option>
+<option value="Barbequeue chicken">Barbequeue chicken</option>
+<option value="French fries">French fries</option>
+</select>
+<br>
+<br>
+<label>Select beverage</label>
+<select>
+<option value="Cola">Cola</option>
+<option value="Sprite">Sprite</option>
+<option value="Fanta">Fanta</option>
+<option value="Limca">Limca</option>
+<option value="Mojito">Mojito</option>
+<option value="Lime juice">Lime juice</option>
+<option value="Orange juice">Orange juice</option>
+</select>
+<br>
+<br>
+<label>What type of bun would you like?</label>
+<select>
+<option value="sesame">Sesame</option>
+<option value="potatoe">Potato</option>
+<option value="pretzel">Pretzel</option>
+</select>
+<br>
+<br>
+<label>Enter your feedback:</label>
+<br>
+<textarea rows="10" cols="30">Type here</textarea>
+<br>
+<br>
+<label>Choose payment option</label>
+<br>
+Cash:
+<input type="radio" name="poll" value="cash"/>
+<br>
+Debit Card:
+<input type="radio" name="poll" value="Debit card"/>
+<br>
+<label for="payment">Credit Card Number (no spaces):</label>
+<input id="payment" name="payment" type="text" pattern="[0-9]{14,16}">
+<br>
+<br>
+<input type="submit" value="submit">
+<br>
+</form>
+</body>
+</html>
